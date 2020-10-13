@@ -1,13 +1,3 @@
-variable "region" {
-  default     = "ap-southeast-2"
-  description = "AWS region"
-}
-
-provider "aws" {
-  version = ">= 2.28.1"
-  region  = "ap-southeast-2"
-}
-
 data "aws_availability_zones" "available" {}
 
 locals {
